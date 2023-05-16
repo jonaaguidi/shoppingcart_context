@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Products.css"
 import { ProductsData } from '../../Data/ProductsData';
+import { CartContext } from '../../Context/CartContext';
 
 function Products() {
+  const { addProductsToCart } = useContext(CartContext)
+
   return (
     <div className='productsContainer'>
       {ProductsData.map((product, i) => (
@@ -11,7 +14,9 @@ function Products() {
             <div>
             <p>{product.name} - ${product.price}</p>
             </div>
-          <button onClick={() => console.log(product)}>Añadir al Carrito</button>
+          <button onClick={() => addProductsToCart(product)}>
+            Añadir al Carrito
+          </button>
         </div>
       ))}
     </div>

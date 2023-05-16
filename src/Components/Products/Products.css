@@ -34,6 +34,7 @@
     border-radius: 8px;
     font-size: small;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .product button:hover{
