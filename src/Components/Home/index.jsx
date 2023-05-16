@@ -1,9 +1,14 @@
 import React from 'react'
-import "./home.css"
+import { Cart } from "../Cart/index"
+import { Products } from "../Products/index"
+import "./Home.css"
 
 const Home = () => {
   return (
-    <h3 className='title'>Home Component</h3>
+    <div className='home'>
+        <Cart />
+        <Products />
+    </div>
   );
 }
 
