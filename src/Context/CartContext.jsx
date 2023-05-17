@@ -14,6 +14,7 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         localStorage.setItem("cartProducts", JSON.stringify(cartItems))
+        console.log(cartItems); // Debe sumar +1 al amount en cada click
     }, [cartItems])
 
     const addProductsToCart = (product) => {
