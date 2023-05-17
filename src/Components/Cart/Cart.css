@@ -28,6 +28,7 @@ svg {
   justify-content: center;
   border-radius: 999px;
 }
+
 .productsNumber {
   height: 20px;
   width: 20px;
@@ -35,7 +36,7 @@ svg {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #fb3939;
+  background-color: green;
   font-size: 12px;
   font-weight: bold;
   color: white;
@@ -49,7 +50,7 @@ svg {
   margin-top: 10px;
   margin-right: 20px;
   border-radius: 30px;
-  width: 400px;
+  width: 350px;
   background-color: #222222;
   color: white;
 }
@@ -60,7 +61,7 @@ svg {
   margin-top: 35px;
 }
 
-.cartVacio {
+.cartEmpty {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
@@ -71,4 +72,23 @@ svg {
   font-weight: bold;
   margin-top: 15px;
   padding-bottom: 35px;
+}
+
+.productsContainer_cart {
+  max-height: 250px;
+  overflow-y: scroll;
+  margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
 }
